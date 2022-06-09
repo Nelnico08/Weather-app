@@ -67,12 +67,6 @@ export default function Card({temp, min, max, id, nombre, img}) {
           <p>Minima: {min}ºC</p>
           <p>Maxima: {max}ºC</p>
         </div>
-        
-        {/* <img 
-          src={`http://openweathermap.org/img/wn/${img}@2x.png`} 
-          alt='foto de clima'
-          className={style.imagen}
-        /> */}
     </div>
   )
 }
