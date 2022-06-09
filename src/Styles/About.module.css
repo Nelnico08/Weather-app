@@ -1,0 +1,18 @@
+.contenedor{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.tarjeta{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: coral;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    box-shadow: -7px 7px rgba(100, 223, 182, 0.178);
+    text-align: center;
+}

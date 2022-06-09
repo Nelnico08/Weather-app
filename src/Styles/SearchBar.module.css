@@ -1,0 +1,21 @@
+.contenedor{
+    display: flex;
+    justify-content: flex-end;
+    height: 30px;
+}
+
+.input{
+    border: coral solid 1px;
+    outline: none;
+    width: 80px;
+}
+.btnSearch{
+    background-color: coral;
+    color: purple;
+    border: none;
+    cursor: pointer;
+}
+.btnSearch:hover{
+    background-color: rgb(14, 224, 14);
+    font-weight: bolder;
+}

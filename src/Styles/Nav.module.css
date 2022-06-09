@@ -1,0 +1,30 @@
+.navBar{
+    display: flex;
+    background-color: rgba(107, 125, 131, 0.397);
+    justify-content: space-between;
+    min-height: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.tituloLogo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 175px;
+    height: 25px;
+    font-weight: bold;
+    color: coral;
+    text-shadow: 1px 2px rgb(1, 100, 95);
+}
+
+.imagenLogo{
+    height: 50px;
+    width: 50px;
+}
+
+.links{
+    font-weight: bold;
+    color: coral;
+    text-shadow: 1px 2px rgb(1, 100, 95);
+}

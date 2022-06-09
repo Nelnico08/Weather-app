@@ -1,0 +1,87 @@
+.contenedor{
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    width: 200px;
+    height: 275px;
+    box-shadow: -7px 7px rgba(100, 223, 182, 0.178);
+    font-weight: bolder;
+    margin: 10px
+}
+
+.btn{
+    height: min-content;
+    width: min-content;
+    align-self: flex-end;
+    margin: 10px;
+    cursor: pointer;
+    background-color: red;
+    border: none;
+}
+
+.btn:hover{
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+.ciudad{
+    color: white;
+    text-shadow: 2px 1px black !important;
+}
+
+.miniContenedor{
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* .imagen{
+    width: 100px;
+    align-self: center;
+} */
+
+.soleado{
+    background-image: url("../Imagenes/soleado.png");
+}
+
+.nubesSol{
+    background-image: url("../Imagenes/nubesSol.png");
+}
+
+.nublado{
+    background-image: url("../Imagenes/nublado.png");
+}
+
+.noche{
+    background-image: url("../Imagenes/night.png");
+    color: white;
+}
+
+.nubesNoche{
+    background-image: url("../Imagenes/nubesNoche.png");
+    color: white;
+}
+
+.lluvia{
+    background-image: url("../Imagenes/lluvia.png");
+    color: white;
+}
+
+.tormenta{
+    background-image: url("../Imagenes/tormenta.png");
+    color: white;
+}
+
+.nieve{
+    background-image: url("../Imagenes/nieve.png");
+}
+
+.niebla {
+    background-image: url("../Imagenes/niebla.png");
+}
