@@ -3,7 +3,7 @@ export const DETALLE_CIUDAD = 'DETALLE_CIUDAD';
 export const ELIMINAR_CIUDAD = 'ELIMINAR_CIUDAD';
 export const CLEAN_STATE = 'CLEAN_STATE';
 
-const apiKey = 'cb5414378eebbbc8b1352cc24081ea27'
+const apiKey = process.env.REACT_APP_API_KEY;
 
 export function buscarCiudad(ciudad){
   return function(dispatch) {
