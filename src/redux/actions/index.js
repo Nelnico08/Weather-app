@@ -1,3 +1,5 @@
+import { toast } from 'react-hot-toast'
+
 export const BUSCAR_CIUDAD = 'BUSCAR_CIUDAD';
 export const DETALLE_CIUDAD = 'DETALLE_CIUDAD';
 export const ELIMINAR_CIUDAD = 'ELIMINAR_CIUDAD';
@@ -21,7 +23,7 @@ export function buscarCiudad(ciudad){
           };
           dispatch({type:BUSCAR_CIUDAD, payload: ciudad})
         }else{
-          alert('No se encontro la ciudad')
+          toast.error('No se encontro la ciudad')
         }
       })
   }

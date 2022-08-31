@@ -59,14 +59,14 @@ export default function Card({temp, min, max, id, nombre, img}) {
   return (
     <div  className={`${style.contenedor} ${backgroundCard}`} key={id}>
         <button className={style.btn} onClick={(e) => onClose(e,id)}>X</button>
-        <div className={style.miniContenedor}>
-          <Link to={`/ciudad/${id}`}>
+        <Link to={`/ciudad/${id}`}>
+          <div className={style.miniContenedor}>
             <h3 className={style.ciudad}>{nombre}</h3>
-          </Link>
-          <p>Temperatura: {temp}ºC</p>
-          <p>Minima: {min}ºC</p>
-          <p>Maxima: {max}ºC</p>
-        </div>
+            <p>Temperatura: {temp}ºC</p>
+            <p>Minima: {min}ºC</p>
+            <p>Maxima: {max}ºC</p>
+          </div>
+        </Link>
     </div>
   )
 }

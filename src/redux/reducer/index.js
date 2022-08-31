@@ -1,5 +1,5 @@
 import { BUSCAR_CIUDAD, DETALLE_CIUDAD, ELIMINAR_CIUDAD, CLEAN_STATE } from "../actions"
-
+import { toast } from 'react-hot-toast'
 
 const initialState = {
     ciudades: [],
@@ -10,9 +10,13 @@ const rootReducer = (state = initialState, action) => {
   switch (action.type) {
 
   case BUSCAR_CIUDAD:
-    return { 
+    if(state.ciudades.length >= 5){
+      toast('Elimine al menos una ciudad')
+    }else{
+      return { 
         ...state,
         ciudades: [...state.ciudades, action.payload]
+      }
     }
   case DETALLE_CIUDAD:
     return {

@@ -16,6 +16,7 @@
     font-weight: bold;
     color: coral;
     text-shadow: 1px 2px rgb(1, 100, 95);
+    user-select: none;
 }
 
 .imagenLogo{
@@ -24,7 +25,14 @@
 }
 
 .links{
+    width: 60px;
+    border-radius: 15%;
     font-weight: bold;
     color: coral;
+    text-align: center;
     text-shadow: 1px 2px rgb(1, 100, 95);
+}
+
+.links:hover {
+    background-color: rgba(255, 255, 255, 0.61);
 }

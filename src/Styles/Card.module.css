@@ -85,3 +85,8 @@
 .niebla {
     background-image: url("../Imagenes/niebla.png");
 }
+
+p{
+    color: white;
+    text-shadow: 2px 1px black ;
+}
