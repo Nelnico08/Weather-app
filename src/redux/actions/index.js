@@ -9,7 +9,7 @@ const apiKey = process.env.REACT_APP_API_KEY;
 
 export function buscarCiudad(ciudad){
   return function(dispatch) {
-    return fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric&lang=es`)
+    return fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric&lang=es`)
       .then(respuesta => respuesta.json())
       .then(json =>{
         if (json.main !== undefined){
@@ -31,7 +31,7 @@ export function buscarCiudad(ciudad){
 
 export function detalleCiudad(id) {
   return function(dispatch){
-    return fetch(`http://api.openweathermap.org/data/2.5/weather?id=${id}&appid=${apiKey}&units=metric&lang=es`)
+    return fetch(`https://api.openweathermap.org/data/2.5/weather?id=${id}&appid=${apiKey}&units=metric&lang=es`)
       .then(respuesta => respuesta.json())
       .then(json => {
         if(json.main !== undefined){
